@@ -49,3 +49,13 @@ body {
   flex-direction: column;
   gap: 10px;
 }
+
+.text-center {
+  text-align: center;
+  padding: 1rem;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.space {
+  margin-bottom: 2rem;
+}
