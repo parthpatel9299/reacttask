@@ -1,25 +1,25 @@
-import React  from "react";
-const d = new Date(2020,12,5,);
+import React from "react";
+const d = new Date(2020, 12, 5,);
 const hour = d.getHours();
 let GreetingFor = "";
-let cssTime = "";
+let cssTime =  " " ;
 
 if (hour >= 1 && hour <= 11) {
   GreetingFor = `Good Morning`;
-  cssTime = {color:"green"};
+  cssTime = { color: "green" };
 } else if (hour >= 12 && hour <= 19) {
   GreetingFor = "Good Afternoon";
-  cssTime = {color:"orange"};
+  cssTime = { color: "orange" };
 } else {
   GreetingFor = "Good Night";
-  cssTime = {color:"gray "};
+  cssTime = { color: "gray " };
 }
 console.log(cssTime)
 function Greeting() {
   return (
     <>
       <h1>
-        hello sir, <span  style={cssTime}>{GreetingFor}</span>{" "}
+        hello sir, <span style={{cssTime}}>{GreetingFor}</span>{" "}
       </h1>
     </>
   );

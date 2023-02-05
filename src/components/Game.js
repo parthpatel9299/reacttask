@@ -26,8 +26,8 @@ export default function Game() {
   return (
     <>
       <h1 className="heading_style"> Game </h1>
-      <Slot X=" " Y=" P " Z=" P " />
-      <Slot X=" P " Y=" P " Z=" Z " />
+      <Slot X="😄 " Y=" 😄 " Z=" 😄 " />
+      <Slot X=" 👎 " Y=" 👍 " Z=" 👍" />
       <div className="space"></div>
     </>
   );
