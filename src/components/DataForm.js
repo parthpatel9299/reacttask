@@ -17,11 +17,7 @@ export default function DataForm() {
           username: value,
           password: preValue.password,
         };
-<<<<<<< HEAD
       } else if ((name === "password")) {
-=======
-      } else if((name === "password")){
->>>>>>> b30b3baa60913c1f082094ef2a1f644f2865c4f7
         return {
           username: preValue.username,
           password: value,

@@ -14,7 +14,7 @@ export default function ToDoListItem(props) {
                 >
                     x
                 </button>{" "}
-                {props.item}{props.id}
+                {props.item}
             </h1>
         </>
     );

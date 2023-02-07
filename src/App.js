@@ -12,12 +12,9 @@ import DateUpdate from "./components/DateUpdate";
 import AutoDateUpdate from "./components/AutoDateUpdate";
 import Form from "./components/Form";
 import DataForm from "./components/DataForm";
-<<<<<<< HEAD
 import Login from "./components/Login";
 import ToDoList from "./components/ToDoList";
 import Incrise from "./components/Incrise";
-=======
->>>>>>> b30b3baa60913c1f082094ef2a1f644f2865c4f7
 
 const name = "parth";
 const currentTime = new Date().toLocaleTimeString();
@@ -26,12 +23,9 @@ const currentDate = new Date().toLocaleDateString();
 function App() {
   return (
     <>
-<<<<<<< HEAD
       <Incrise />
       <ToDoList />
       <Login />
-=======
->>>>>>> b30b3baa60913c1f082094ef2a1f644f2865c4f7
       <DataForm />
       <Form />
       <AutoDateUpdate />
