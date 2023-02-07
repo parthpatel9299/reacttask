@@ -7,6 +7,14 @@ import Condition from "./components/Condition";
 import Calc from "./components/Calc";
 import Greeting from "./components/Greeting";
 import Game from "./components/Game";
+import Counter from "./components/Counter";
+import DateUpdate from "./components/DateUpdate";
+import AutoDateUpdate from "./components/AutoDateUpdate";
+import Form from "./components/Form";
+import DataForm from "./components/DataForm";
+import Login from "./components/Login";
+import ToDoList from "./components/ToDoList";
+import Incrise from "./components/Incrise";
 
 const name = "parth";
 const currentTime = new Date().toLocaleTimeString();
@@ -15,6 +23,14 @@ const currentDate = new Date().toLocaleDateString();
 function App() {
   return (
     <>
+      <Incrise />
+      <ToDoList />
+      <Login />
+      <DataForm />
+      <Form />
+      <AutoDateUpdate />
+      <DateUpdate />
+      <Counter />
       <Game />
       <h1 className="heading_style">Cards</h1>
       <IfCondition />
