@@ -48,7 +48,7 @@ export default function Notepad(props) {
                         onChange={inputNote}
                         value={note.content}
                     ></textarea>
-                                 {show ?   <Button onClick={AddData}>
+                                 {show ?   <Button color="success"  onClick={AddData}>
                         <div className="plus_sign">+</div>
                     </Button>: null}
                 </form>

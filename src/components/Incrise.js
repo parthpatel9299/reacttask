@@ -1,3 +1,4 @@
+import { Button } from "reactstrap";
 import React, { useState } from "react";
 
 export default function Incrise() {
@@ -19,8 +20,8 @@ export default function Incrise() {
     <>
       <div>
         <h1>{count}</h1>
-        <button onClick={Incriment}>+</button>{" "}
-        <button onClick={Decriment}>-</button>
+        <Button color="success"  onClick={Incriment}>+</Button>{" "}
+        <Button color="success"  onClick={Decriment}>-</Button>
       </div>
     </>
   );

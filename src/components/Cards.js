@@ -1,4 +1,5 @@
 import React from "react";
+import { Button } from "reactstrap";
 function Cards(props) {
   const cal =  props.index + 1
   return (
@@ -12,7 +13,7 @@ function Cards(props) {
               + '' + cal}
           </h3>
           <a href={props.link}>
-            <button>Watch now</button>
+            <Button color="success" >Watch now</Button>
           </a>
         </div>
       </div>

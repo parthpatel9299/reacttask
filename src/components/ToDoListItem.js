@@ -1,19 +1,19 @@
 import React from "react";
+import { Button } from "reactstrap";
 
 export default function ToDoListItem(props) {
 
     const Delete = () => {
         props.deleteItem(props.id);
     }
-    console.log(Delete)
     return (
         <>
             <h1>
-                <button
+                <Button color="success" 
                     onClick={Delete}
                 >
                     x
-                </button>{" "}
+                </Button>
                 {props.item}
             </h1>
         </>

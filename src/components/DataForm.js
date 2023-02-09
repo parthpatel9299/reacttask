@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Button } from "reactstrap";
 
 export default function DataForm() {
   const [data, setData] = useState({
@@ -43,7 +44,7 @@ export default function DataForm() {
         placeholder="password"
         value={data.password}
       />
-      <button type="submit">Submit</button>
+      <Button color="success"  type="submit">Submit</Button>
     </form>
   );
 }

@@ -18,7 +18,10 @@ import Incrise from "./components/Incrise";
 import Accordion from "./components/Accordion/Accordion";
 import OnePageSide from "./components/OnePageSide";
 import Keep from "./components/Keep/Keep";
-
+import ContextApi from "./components/Keep/ContextApi";
+import UseContext from "./components/Keep/UseContext";
+import UseEffect from "./components/Keep/UseEffect";
+import Covid from "./components/Covid19/Covid";
 
 const name = "parth";
 const currentTime = new Date().toLocaleTimeString();
@@ -27,8 +30,11 @@ const currentDate = new Date().toLocaleDateString();
 function App() {
   return (
     <>
-    <Keep/>
-
+      <Covid />
+      <UseEffect />
+      <UseContext />
+      <ContextApi />
+      <Keep />
       <OnePageSide />
       <Accordion />
       <Incrise />

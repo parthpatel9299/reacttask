@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Button } from "reactstrap";
 
 export default function Form() {
   const [name, setName] = useState();
@@ -15,7 +16,7 @@ export default function Form() {
     <form onClick={onSubmit}>
       <h1>Hello {FullName}</h1>
       <input type={"text"} onChange={inputValue} value={name} />
-      <button type="submit">Submit</button>
+      <Button color="success"  type="submit">Submit</Button>
     </form>
   );
 }

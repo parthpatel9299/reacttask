@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Button } from "reactstrap";
 
 export default function Login() {
     const [data, setData] = useState({
@@ -99,9 +100,9 @@ export default function Login() {
                     placeholder="number"
                     value={data.number}
                 />
-                <button type="submit" onClick={onSubmit}>
+                <Button color="success"  type="submit" onClick={onSubmit}>
                     Submit
-                </button>
+                </Button>
             </form>
         </>
     );

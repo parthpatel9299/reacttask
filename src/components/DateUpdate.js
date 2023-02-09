@@ -1,3 +1,4 @@
+import { Button } from "reactstrap";
 import React, { useState } from "react";
 
 export default function DateUpdate() {
@@ -10,7 +11,7 @@ export default function DateUpdate() {
   return (
     <div className="counter">
       <h1>{time}</h1>
-      <button onClick={AddCount}>click me</button>
+      <Button color="success"  onClick={AddCount}>click me</Button>
     </div>
   );
 }

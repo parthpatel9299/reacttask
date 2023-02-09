@@ -13,7 +13,7 @@ export default function KeepTicket(props) {
                 <h1>{props.title}</h1>
                 <br />
                 <p>{props.content}</p>
-                <Button className="btn" onClick={DeleteKeep}>
+                <Button color="success"  className="btn" onClick={DeleteKeep}>
                     <div className="deleteIcon">-</div>
                 </Button>
             </div>

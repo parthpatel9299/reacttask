@@ -34,7 +34,7 @@ export default function LoginForm() {
         placeholder="password"
         value={password}
       />
-      <button type="submit">Submit</button>
+      <Button color="success"  type="submit">Submit</Button>
     </form>
   );
 }

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Button } from "reactstrap";
 
 export default function Counter() {
     const [count, setCount] = useState(0);
@@ -8,7 +9,7 @@ export default function Counter() {
   return (
     <div className="counter">
       <h1>{count}</h1>
-      <button onClick={AddCount}>click me</button>
+      <Button color="success"  onClick={AddCount}>click me</Button>
     </div>
   );
 }
