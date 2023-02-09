@@ -15,6 +15,10 @@ import DataForm from "./components/DataForm";
 import Login from "./components/Login";
 import ToDoList from "./components/ToDoList";
 import Incrise from "./components/Incrise";
+import Accordion from "./components/Accordion/Accordion";
+import OnePageSide from "./components/OnePageSide";
+import Keep from "./components/Keep/Keep";
+
 
 const name = "parth";
 const currentTime = new Date().toLocaleTimeString();
@@ -23,6 +27,10 @@ const currentDate = new Date().toLocaleDateString();
 function App() {
   return (
     <>
+    <Keep/>
+
+      <OnePageSide />
+      <Accordion />
       <Incrise />
       <ToDoList />
       <Login />
