@@ -23,6 +23,7 @@ import UseContext from "./components/Keep/UseContext";
 import UseEffect from "./components/Keep/UseEffect";
 import Covid from "./components/Covid19/Covid";
 import Pokemon from "./components/Pokemon/Pokemon";
+import { Container } from "reactstrap";
 
 const name = "parth";
 const currentTime = new Date().toLocaleTimeString();
@@ -30,7 +31,7 @@ const currentDate = new Date().toLocaleDateString();
 
 function App() {
   return (
-    <>
+    <Container>
     <Pokemon/>
       <Covid />
       <UseEffect />
@@ -71,7 +72,7 @@ function App() {
       <p>my fev no {3 * 3}</p>
       <p>today date is {currentDate} </p>
       <p>current time date is {currentTime} </p>
-    </>
+    </Container>
   );
 }
 
