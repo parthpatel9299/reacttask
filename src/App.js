@@ -22,6 +22,7 @@ import ContextApi from "./components/Keep/ContextApi";
 import UseContext from "./components/Keep/UseContext";
 import UseEffect from "./components/Keep/UseEffect";
 import Covid from "./components/Covid19/Covid";
+import Pokemon from "./components/Pokemon/Pokemon";
 
 const name = "parth";
 const currentTime = new Date().toLocaleTimeString();
@@ -30,6 +31,7 @@ const currentDate = new Date().toLocaleDateString();
 function App() {
   return (
     <>
+    <Pokemon/>
       <Covid />
       <UseEffect />
       <UseContext />
