@@ -4,6 +4,7 @@ import { Table } from "reactstrap";
 export default function Covid() {
   const [Data, setData] = useState([]);
   console.log(Data, "++Data");
+  nginx
   const getCovidData = async () => {
     const res = await fetch(
       "https://data.covid19india.org/travel_history.json"
