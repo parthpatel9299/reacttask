@@ -13,6 +13,7 @@ export default function keep() {
   };
   const DeleteItem = (id) => {
     setNoteStore((allItem) => {
+      console.log('allItem', allItem);
       return allItem.filter((arry, index) => {
         return index !== id;
       });

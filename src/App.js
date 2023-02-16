@@ -24,6 +24,7 @@ import UseEffect from "./components/Keep/UseEffect";
 import Covid from "./components/Covid19/Covid";
 import Pokemon from "./components/Pokemon/Pokemon";
 import { Container } from "reactstrap";
+import { Route, Routes, Switch } from "react-router-dom";
 
 const name = "parth";
 const currentTime = new Date().toLocaleTimeString();
@@ -32,15 +33,13 @@ const currentDate = new Date().toLocaleDateString();
 function App() {
   return (
     <Container>
-    <Pokemon/>
+      <Pokemon />
       <Covid />
       <UseEffect />
       <UseContext />
       <ContextApi />
-      <Keep />
       <OnePageSide />
       <Accordion />
-      <Incrise />
       <ToDoList />
       <Login />
       <DataForm />
@@ -66,12 +65,32 @@ function App() {
         );
       })}
 
-      <Calc />
+      
       <Greeting />
       <h1>hello, i am {name}.</h1>
       <p>my fev no {3 * 3}</p>
       <p>today date is {currentDate} </p>
       <p>current time date is {currentTime} </p>
+      <nav>
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/about">About</Link>
+            </li>
+            <li>
+              <Link to="/Incrise">Incrise</Link>
+            </li>
+          </ul>
+        </nav>
+      <Routes>
+        <Route path="/about" element={<Keep />} />
+        <Route path="/" element={<Calc />} />
+        <Route path="/Incrise" element={<Incrise />} />
+      
+
+      </Routes>
     </Container>
   );
 }
