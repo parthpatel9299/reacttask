@@ -24,6 +24,7 @@ import UseEffect from "./components/Keep/UseEffect";
 import Covid from "./components/Covid19/Covid";
 import Pokemon from "./components/Pokemon/Pokemon";
 import { Container } from "reactstrap";
+import Search from "./components/Search/Search";
 
 const name = "parth";
 const currentTime = new Date().toLocaleTimeString();
@@ -32,6 +33,7 @@ const currentDate = new Date().toLocaleDateString();
 function App() {
   return (
     <Container>
+    <Search/>
     <Pokemon/>
       <Covid />
       <UseEffect />

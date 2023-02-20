@@ -1,5 +1,5 @@
 import React from "react";
-const d = new Date(2020, 12, 5,);
+const d = new Date();
 const hour = d.getHours();
 let GreetingFor = "";
 let cssTime =  " " ;
@@ -14,7 +14,7 @@ if (hour >= 1 && hour <= 11) {
   GreetingFor = "Good Night";
   cssTime = { color: "gray " };
 }
-console.log(cssTime)
+
 function Greeting() {
   return (
     <>
