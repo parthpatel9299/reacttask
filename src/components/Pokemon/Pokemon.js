@@ -20,7 +20,7 @@ export default function Pokemon() {
     <Row className="mt-4 mb-5">
       <h1 className="mb-4 fs-5">select num is {num}</h1>
       <h1 className="mb-4 fs-5">select name is     {name}</h1>
-      <h1 className="mb-4 fs-5">select moves is {moves}</h1>
+      <h1 className="mb-4 fs-5">select moves~ is {moves}</h1>
   
       
       <Input

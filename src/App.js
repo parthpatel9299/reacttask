@@ -25,7 +25,6 @@ import Covid from "./components/Covid19/Covid";
 import Pokemon from "./components/Pokemon/Pokemon";
 import { Container } from "reactstrap";
 import Search from "./components/Search/Search";
-
 const name = "parth";
 const currentTime = new Date().toLocaleTimeString();
 const currentDate = new Date().toLocaleDateString();
@@ -35,14 +34,13 @@ function App() {
     <Container>
     <Search/>
     <Pokemon/>
+      <Pokemon />
       <Covid />
       <UseEffect />
       <UseContext />
       <ContextApi />
-      <Keep />
       <OnePageSide />
       <Accordion />
-      <Incrise />
       <ToDoList />
       <Login />
       <DataForm />
@@ -68,12 +66,25 @@ function App() {
         );
       })}
 
-      <Calc />
+      
       <Greeting />
       <h1>hello, i am {name}.</h1>
       <p>my fev no {3 * 3}</p>
       <p>today date is {currentDate} </p>
       <p>current time date is {currentTime} </p>
+      <nav>
+          <ul>
+            <li>
+              <a to="/">Home</a>
+            </li>
+            <li>
+              <a to="/about">About</a>
+            </li>
+            <li>
+              <a to="/Incrise">Incrise</a>
+            </li>
+          </ul>
+        </nav>
     </Container>
   );
 }
