@@ -7,6 +7,7 @@ export default function Notepad(props) {
     title: "",
     content: "",
   });
+  console.log("note", note);
   const inputNote = (e) => {
     const { name, value } = e.target;
     setNote((preData) => {
