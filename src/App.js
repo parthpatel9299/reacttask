@@ -25,15 +25,19 @@ import Covid from "./components/Covid19/Covid";
 import Pokemon from "./components/Pokemon/Pokemon";
 import { Container } from "reactstrap";
 import Search from "./components/Search/Search";
+import WeatherApp from "./components/WeatherApp";
+import Todo from "./components/TODO/Todo";
 const name = "parth";
 const currentTime = new Date().toLocaleTimeString();
 const currentDate = new Date().toLocaleDateString();
 
 function App() {
   return (
-    <Container>
-    <Keep/>
- <Search/>
+    <Container fluid>
+    <Todo/>
+      {/* <Keep />
+      <WeatherApp /> */}
+      {/* <Search/>
     <Pokemon/>
       <Pokemon />
       <Covid />
@@ -85,7 +89,7 @@ function App() {
               <a to="/Incrise">Incrise</a>
             </li>
           </ul>
-        </nav> 
+        </nav>  */}
     </Container>
   );
 }
