@@ -134,6 +134,7 @@ input:focus {
     font-size: 1.6rem !important;
     margin-bottom: 0 !important;
     color: #fff !important;
+    font-weight: 700;
 }
 
 .fa-trash-alt,

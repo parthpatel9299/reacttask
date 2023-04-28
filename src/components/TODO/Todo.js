@@ -10,12 +10,14 @@ export default function Todo() {
   const AddItem = () => {
     if (!inputData) {
     } else if (inputData && !toggleData) {
-      items.map((data) => {
-        if (data === editData) {
-          setItems(inputData);
+      setItems(items.map((data) => {
+        if (data.id === editData) {
+          return { ...data, name: inputData };
         }
         return data;
-      });
+      }));
+      setInputData("");
+      setToggleData(true)
     } else {
       const updateData = {
         id: new Date().getTime().toString(),
@@ -28,6 +30,17 @@ export default function Todo() {
   const handleKeyDown = (event) => {
     if (event.key === "Enter") {
       if (!inputData) {
+      } else if (inputData && !toggleData) {
+        setItems(items.map((data) => {
+          console.log("data", data, editData);
+          if (data.id === editData) {
+            return { ...data, name: inputData };
+          }
+          return data;
+        }));
+        setInputData("");
+        setToggleData(true)
+
       } else {
         const updateData = {
           id: new Date().getTime().toString(),
@@ -48,7 +61,6 @@ export default function Todo() {
     setItems([]);
   };
   const editItem = (dataID) => {
-    console.log("editItem", dataID);
     const editItemsData = items.find((data) => {
       return data.id === dataID;
     });

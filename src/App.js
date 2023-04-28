@@ -27,6 +27,7 @@ import { Container } from "reactstrap";
 import Search from "./components/Search/Search";
 import WeatherApp from "./components/WeatherApp";
 import Todo from "./components/TODO/Todo";
+import TodoTwo from "./components/TODO/TodoTwo";
 const name = "parth";
 const currentTime = new Date().toLocaleTimeString();
 const currentDate = new Date().toLocaleDateString();
@@ -34,11 +35,12 @@ const currentDate = new Date().toLocaleDateString();
 function App() {
   return (
     <Container fluid>
-    <Todo/>
+    {/* <Pokemon/> */}
+    {/* <Todo/> */}
+<TodoTwo/>
       {/* <Keep />
       <WeatherApp /> */}
       {/* <Search/>
-    <Pokemon/>
       <Pokemon />
       <Covid />
       <UseEffect />
