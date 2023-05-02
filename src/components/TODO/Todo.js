@@ -2,6 +2,7 @@ import { Icon } from "@iconify/react";
 import React from "react";
 import { useState } from "react";
 import "../../todo.css";
+
 export default function Todo() {
   const [inputData, setInputData] = useState("");
   const [items, setItems] = useState([]);
